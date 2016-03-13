@@ -1,0 +1,26 @@
+﻿Build started 11/19/2015 8:30:34 PM.
+     1>Project "C:\Users\MMT\Desktop\waiter\waiter\waiter.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_waiter.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are GeneratedFiles\Debug\moc_waiter.cpp, GeneratedFiles\Release\moc_waiter.cpp.
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\Qt5.5.1\5.5\msvc2013\include /I.\GeneratedFiles\Debug /IC:\Qt\Qt5.5.1\5.5\msvc2013\include\QtCore /IC:\Qt\Qt5.5.1\5.5\msvc2013\include\QtGui /IC:\Qt\Qt5.5.1\5.5\msvc2013\include\QtSql /IC:\Qt\Qt5.5.1\5.5\msvc2013\include\QtWidgets /Zi /nologo /W1 /WX- /Od /Oy- /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_SQL_LIB /D QT_WIDGETS_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt waiter.cpp
+         waiter.cpp
+       Link:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\MMT\Desktop\waiter\Win32\Debug\\waiter.exe" /NOLOGO /LIBPATH:C:\Qt\Qt5.5.1\5.5\msvc2013\lib qtmaind.lib Qt5Cored.lib Qt5Guid.lib Qt5Sqld.lib Qt5Widgetsd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\MMT\Desktop\waiter\Win32\Debug\waiter.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\MMT\Desktop\waiter\Win32\Debug\waiter.lib" /MACHINE:X86 /SAFESEH Debug\customer.obj
+         Debug\deal.obj
+         Debug\employee.obj
+         Debug\fooditem.obj
+         Debug\moc_waiter.obj
+         Debug\qrc_waiter.obj
+         Debug\itemwithamount.obj
+         Debug\main.obj
+         Debug\order.obj
+         Debug\reservation.obj
+         Debug\sitting_arrangment.obj
+         Debug\table.obj
+         Debug\waiter.obj
+         waiter.vcxproj -> C:\Users\MMT\Desktop\waiter\Win32\Debug\waiter.exe
+     1>Done Building Project "C:\Users\MMT\Desktop\waiter\waiter\waiter.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:11.38

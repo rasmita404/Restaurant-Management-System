@@ -1,0 +1,35 @@
+﻿Build started 11/17/2015 3:03:14 PM.
+     1>Project "C:\Qt\Qt5.3.2\Tools\QtCreator\bin\receptionist\receptionist.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Moc'ing mainwindow.h...
+         Uic'ing mainwindow.ui...
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_mainwindow.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are Debug\moc_mainwindow.cpp, Release\moc_mainwindow.cpp.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_menu.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are Debug\moc_menu.cpp, Release\moc_menu.cpp.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Qt\Qt5.3.2\5.3\msvc2013\include /IC:\Qt\Qt5.3.2\5.3\msvc2013\include\QtWidgets /IC:\Qt\Qt5.3.2\5.3\msvc2013\include\QtGui /IC:\Qt\Qt5.3.2\5.3\msvc2013\include\QtANGLE /IC:\Qt\Qt5.3.2\5.3\msvc2013\include\QtCore /Idebug /I. /I"C:\Qt\Qt5.3.2\5.3\msvc2013\mkspecs\win32-msvc2013" /I.\GeneratedFiles /Zi /nologo /W3 /WX- /Od /Oy- /D _WINDOWS /D UNICODE /D WIN32 /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /D QT_OPENGL_ES_2 /D QT_OPENGL_ES_2_ANGLE /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"Win32\Debug\\" /Fd"Win32\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt -Zm200 -w34100 -w34189 Debug\moc_mainwindow.cpp main.cpp mainwindow.cpp
+         moc_mainwindow.cpp
+         main.cpp
+         mainwindow.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"debug\\receptionist.exe" /NOLOGO /LIBPATH:C:\Qt\Qt5.3.2\5.3\msvc2013\lib /LIBPATH:C:\Qt\Qt5.3.2\5.3\msvc2013\lib /LIBPATH:C:\Qt\Qt5.3.2\5.3\msvc2013\lib C:\Qt\Qt5.3.2\5.3\msvc2013\lib\qtmaind.lib C:\Qt\Qt5.3.2\5.3\msvc2013\lib\Qt5Cored.lib C:\Qt\Qt5.3.2\5.3\msvc2013\lib\Qt5Widgetsd.lib C:\Qt\Qt5.3.2\5.3\msvc2013\lib\Qt5Guid.lib C:\Qt\Qt5.3.2\5.3\msvc2013\lib\Qt5Cored.lib libEGLd.lib libGLESv2d.lib gdi32.lib user32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"debug\receptionist.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X86 /SAFESEH "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" Win32\Debug\moc_mainwindow.obj
+         Win32\Debug\moc_menu.obj
+         Win32\Debug\main.obj
+         Win32\Debug\mainwindow.obj
+         Win32\Debug\menu.obj
+     1>mainwindow.obj : error LNK2019: unresolved external symbol "public: __thiscall Reservation::Reservation(void)" (??0Reservation@@QAE@XZ) referenced in function "private: void __thiscall MainWindow::on_pushButton_3_clicked(void)" (?on_pushButton_3_clicked@MainWindow@@AAEXXZ)
+     1>mainwindow.obj : error LNK2019: unresolved external symbol "public: void __thiscall Reservation::setAttribute(class QString,class QString)" (?setAttribute@Reservation@@QAEXVQString@@0@Z) referenced in function "private: void __thiscall MainWindow::on_pushButton_3_clicked(void)" (?on_pushButton_3_clicked@MainWindow@@AAEXXZ)
+     1>mainwindow.obj : error LNK2019: unresolved external symbol "public: void __thiscall Customer::setAttributes(class QString,class QString,class QString,class QString)" (?setAttributes@Customer@@QAEXVQString@@000@Z) referenced in function "private: void __thiscall MainWindow::on_pushButton_2_clicked(void)" (?on_pushButton_2_clicked@MainWindow@@AAEXXZ)
+     1>mainwindow.obj : error LNK2019: unresolved external symbol "public: bool __thiscall Receptionist::customerPresent(class QString)" (?customerPresent@Receptionist@@QAE_NVQString@@@Z) referenced in function "private: void __thiscall MainWindow::on_pushButton_clicked(void)" (?on_pushButton_clicked@MainWindow@@AAEXXZ)
+     1>mainwindow.obj : error LNK2019: unresolved external symbol "public: void __thiscall Receptionist::addCustomer(class Customer)" (?addCustomer@Receptionist@@QAEXVCustomer@@@Z) referenced in function "private: void __thiscall MainWindow::on_pushButton_2_clicked(void)" (?on_pushButton_2_clicked@MainWindow@@AAEXXZ)
+     1>mainwindow.obj : error LNK2019: unresolved external symbol "public: bool __thiscall Receptionist::allocateHall(class QString,class Reservation)" (?allocateHall@Receptionist@@QAE_NVQString@@VReservation@@@Z) referenced in function "private: void __thiscall MainWindow::on_pushButton_3_clicked(void)" (?on_pushButton_3_clicked@MainWindow@@AAEXXZ)
+     1>mainwindow.obj : error LNK2001: unresolved external symbol "public: virtual double __thiscall FullTimeReceptionisit::getSalary(void)" (?getSalary@FullTimeReceptionisit@@UAENXZ)
+     1>mainwindow.obj : error LNK2001: unresolved external symbol "public: virtual enum EmployeeType __thiscall FullTimeReceptionisit::getType(void)" (?getType@FullTimeReceptionisit@@UAE?AW4EmployeeType@@XZ)
+     1>mainwindow.obj : error LNK2019: unresolved external symbol "public: __thiscall welcome::welcome(class QWidget *)" (??0welcome@@QAE@PAVQWidget@@@Z) referenced in function "public: __thiscall MainWindow::MainWindow(class QWidget *)" (??0MainWindow@@QAE@PAVQWidget@@@Z)
+     1>mainwindow.obj : error LNK2019: unresolved external symbol "public: virtual __thiscall welcome::~welcome(void)" (??1welcome@@UAE@XZ) referenced in function "public: virtual __thiscall MainWindow::~MainWindow(void)" (??1MainWindow@@UAE@XZ)
+     1>debug\\receptionist.exe : fatal error LNK1120: 10 unresolved externals
+     1>Done Building Project "C:\Qt\Qt5.3.2\Tools\QtCreator\bin\receptionist\receptionist.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:14.28
